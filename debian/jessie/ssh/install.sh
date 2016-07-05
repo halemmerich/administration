@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ../../../
+. ../../../helper/helpers.sh
 
 apt-get --assume-yes install ssh
 
