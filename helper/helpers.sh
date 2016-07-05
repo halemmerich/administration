@@ -16,6 +16,7 @@ function replaceWithLink {
 	if [ "$TARGET_FOR_LINK" = "$FILE_TO_REPLACE" ]
 	then
 		echo Link is alredy correct, nothing to do
+		return 0
 	fi
 
 	if [ -e "$FILE_TO_REPLACE" ]
