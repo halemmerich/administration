@@ -1,1 +1,1 @@
-ACCEPT(SSH)	$FW	net
+SSH(ACCEPT)	net	$FW
