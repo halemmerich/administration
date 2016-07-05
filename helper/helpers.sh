@@ -13,8 +13,6 @@ function replaceWithLink {
 	TARGET_FOR_LINK=`realpath "$TARGET_FOR_LINK"`
 	FILE_TO_REPLACE=`realpath "$FILE_TO_REPLACE="`
 
-	if [ -L "$FILE_TO_REPLACE" -a ]
-
 	if [ -e "$FILE_TO_REPLACE" ]
 	then
 		echo File "$FILE_TO_REPLACE" exists, moving
