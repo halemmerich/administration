@@ -11,7 +11,7 @@ function replaceWithLink {
 	TARGET_FOR_LINK="$1"
 
 	TARGET_FOR_LINK=`realpath "$TARGET_FOR_LINK"`
-	FILE_TO_REPLACE=`realpath "$FILE_TO_REPLACE="`
+	FILE_TO_REPLACE=`realpath "$FILE_TO_REPLACE"`
 
 	if [ -e "$FILE_TO_REPLACE" ]
 	then
