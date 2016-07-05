@@ -19,5 +19,5 @@ function replaceWithLink {
 		mv "$FILE_TO_REPLACE" "$FILE_TO_REPLACE.$BACKUP_FILE_EXTENSION.`getTimeStamp`"
 	fi
 	
-	ln -s "$TARGET_FOR_LINK	" "$FILE_TO_REPLACE"
+	ln -s "$TARGET_FOR_LINK" "$FILE_TO_REPLACE"
 }
