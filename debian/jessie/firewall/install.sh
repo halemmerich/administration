@@ -10,3 +10,5 @@ replaceWithLink files/etc/shorewall/policy /etc/shorewall/policy
 replaceWithLink files/etc/shorewall/rules /etc/shorewall/rules
 replaceWithLink files/etc/shorewall/zones /etc/shorewall/zones
 replaceWithLink files/etc/default/shorewall /etc/default/shorewall
+
+systemctl enable shorewall
