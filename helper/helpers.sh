@@ -13,6 +13,11 @@ function replaceWithLink {
 	TARGET_FOR_LINK=`realpath "$TARGET_FOR_LINK"`
 	FILE_TO_REPLACE=`realpath "$FILE_TO_REPLACE"`
 
+	if [ "$TARGET_FOR_LINK" = "$FILE_TO_REPLACE" ]
+	then
+		echo Link is alredy correct, nothing to do
+	fi
+
 	if [ -e "$FILE_TO_REPLACE" ]
 	then
 		echo File "$FILE_TO_REPLACE" exists, moving
