@@ -3,7 +3,7 @@
 BACKUP_FILE_EXTENSION=backup
 
 function getTimeStamp {
-	date +"%T"
+	date +"%s"
 }
 
 function replaceWithLink {
