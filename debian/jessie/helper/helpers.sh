@@ -27,3 +27,8 @@ function replaceWithLink {
 	
 	ln -s "$TARGET_FOR_LINK" "$FILE_TO_REPLACE"
 }
+
+function createNoLoginServiceUser {
+	USERNAME="$1"
+	useradd --create-home -d "/var/lib/$USERNAME" --system --shell /sbin/nologin --comment "Account to run ZNC daemon" --user-group "$USERNAME"
+}
